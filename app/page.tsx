@@ -1,12 +1,13 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home(): React.JSX.Element {
   return (
-    <div className="min-h-screen bg-neutral-900 text-white font-sans antialiased">
+    <div className="relative min-h-screen flex items-center justify-center text-white font-sans">
       
-      {/* 1. L'IMAGE DE FOND */}
-      <div className="fixed inset-0 -z-10 h-full w-full">
+      {/* 1. L'IMAGE DE FOND SÉCURISÉE - Plein écran total */}
+      <div className="absolute inset-0 -z-10 h-full w-full bg-neutral-900">
         <Image
           src="/photo-concert.jpg"
           alt="Ambiance de concert"
@@ -14,17 +15,27 @@ export default function Home(): React.JSX.Element {
           className="object-cover object-center opacity-60"
           priority
         />
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
-      {/* 2. LE CONTENU PRINCIPAL (Le header est maintenant géré par le layout) */}
-      <main className="flex min-h-screen items-center justify-center pt-24">
-        <div className="text-center space-y-2">
+      {/* 2. LE CONTENU PRINCIPAL CENTRÉ */}
+      <div className="text-center space-y-8 z-10 px-4">
+        <div className="space-y-2">
           <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-white">DEO.</h1>
           <h2 className="text-3xl sm:text-5xl font-light text-white opacity-90">Photographie</h2>
-          <p className="pt-4 text-xl sm:text-2xl font-light text-white/80 tracking-wide">concerts, évènements</p>
+          <p className="pt-4 text-xl sm:text-2xl font-light text-white/80 tracking-wide">
+            concerts, évènements
+          </p>
         </div>
-      </main>
+
+        {/* BOUTON CTA HARMONISÉ */}
+        <Link 
+          href="/prestations"
+          className="inline-block px-8 py-4 bg-[#E8C48C] text-neutral-950 font-bold rounded-lg hover:bg-[#d4b078] transition-all duration-300 hover:scale-105 shadow-lg"
+        >
+          Voir le Portfolio
+        </Link>
+      </div>
 
     </div>
   );
