@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Professionnel — DEO Photographie
 
-## Getting Started
+Ce projet presente l'application web et le portfolio professionnel de DEO Photographie. L'application est developpee avec Next.js et structuree pour une future integration conteneurisee.
 
-First, run the development server:
+- URL Publique Actuelle : https://defitechnique.vercel.app
+- Acces : Public, sans authentification requise.
 
+---
+
+## Stack Technique
+
+### Frontend et UI
+- Framework : Next.js 14+ (App Router)
+- Styles : Tailwind CSS (Interface sombre, epuree et adaptee aux mobiles et ecrans de bureau)
+- Icones : Lucide React
+
+### Architecture et Deploiement
+- Etat actuel : Deploiement initial et hebergement sur la plateforme Vercel pour la validation des composants front-end.
+- Evolution cible : Le projet integre un Dockerfile a sa racine, prepare pour migrer vers une infrastructure auto-hebergee sous Docker Compose (derriere un reverse proxy Caddy) afin d'unifier l'application avec les services existants.
+
+---
+
+## Structure et Pages de l'Application
+
+L'arborescence du site est segmentee en quatre sections cles accessibles publiquement :
+1. Page d'accueil : Vitrine principale et introduction a l'univers visuel.
+2. Page d'information : Presentation de la demarche artistique et des prestations.
+3. Pages Portfolios : Trois galeries distinctes dediees a l'exposition des realisations photographiques via des grilles Tailwind.
+4. Page de contact : Formulaire operationnel pour les demandes de devis et collaborations.
+
+---
+
+## Conformité nLPD et Traitement des Données
+
+Dans le respect de la Loi federale sur la protection des donnees (nLPD) suisse, la gestion des flux d'informations est cartographiee ainsi :
+
+- Collecte minimale : Seules les donnees explicitement saisies par l'utilisateur dans le formulaire de contact (nom, adresse email, message) sont traitees. Aucun cookie de tracage tiers ou script analytique n'est injecte dans le code.
+- Routage du formulaire : Les requetes du formulaire de contact sont traitees via l'API de Web3Forms, qui agit comme sous-traitant technique pour acheminer les messages directement vers la boite de reception email privee de l'administrateur. Conformement a la politique de confidentialite de Web3Forms, les donnees ne sont pas persistees a des fins publicitaires.
+
+---
+
+## Instructions de Lancement Local
+
+### Prerequis
+- Node.js v20+ installe localement.
+
+### Execution du projet en developpement
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### commandes Github
+git add .
+git commit -m "Finalisation du projet et documentation du README"
+git push origin main
