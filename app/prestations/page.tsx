@@ -14,18 +14,18 @@ export default function Prestations(): React.JSX.Element {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <PortfolioCard 
           title="Laurine Moulin - Soprano" 
-          href="app\prestations\laurine_moulin"
-          imageSrc="public\images\prestations\dscf5403.jpg" 
+          href="/prestations/laurine_moulin_soprano"
+          imageSrc="/images/prestations/laurine_moulin/dscf5403.jpg" 
         />
         <PortfolioCard 
           title="Collectif Pierre" 
-          href="app\prestations\collectif_pierre"
-          imageSrc="public/images/prestations/collectif_pierre/dscf7240.jpg" 
+          href="/prestations/collectif_pierre"
+          imageSrc="/images/prestations/collectif_pierre/dscf7240.jpg" 
         />
         <PortfolioCard 
-          title="Carnaval Sion 2025" 
-          href="app\prestations\carnaval_sion"
-          imageSrc="public\images\prestations\dscf6428.jpg" 
+          title="Carnaval de Sion" 
+          href="/prestations/carnaval_sion"
+          imageSrc="/images/prestations/carnaval_sion/dscf6428.jpg" 
         />
       </div>
     </div>
