@@ -15,7 +15,7 @@ export default function Prestations(): React.JSX.Element {
         <PortfolioCard 
           title="Laurine Moulin - Soprano" 
           href="/prestations/laurine_moulin_soprano"
-          imageSrc="/images/prestations/laurine_moulin/dscf5403.jpg" 
+          imageSrc="/images/prestations/dscf5403.jpg" 
         />
         <PortfolioCard 
           title="Collectif Pierre" 
