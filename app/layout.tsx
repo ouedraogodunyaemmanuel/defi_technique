@@ -17,7 +17,7 @@ export default function RootLayout({
             <Link href="/" className="relative block w-16 h-16">
               {/* Utilisation d'une balise img standard pour éviter le crash en production */}
               <img
-                src="/logo.png"
+                src="app\icon.png"
                 alt="Logo DEO Photographie"
                 className="w-full h-full object-contain"
               />
