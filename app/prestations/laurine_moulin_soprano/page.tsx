@@ -68,16 +68,6 @@ export default function GalerieLaurineMoulin(): React.JSX.Element {
           <Image src="/images/prestations/dscf5403.jpg" alt="Laurine Moulin - Photo 12" width={800} height={600} sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto object-contain" />
         </div>
 
-        {/* Photo 13 (Corrigée : présente à la racine de /prestations/) */}
-        <div className="w-full rounded-md overflow-hidden shadow-2xl border border-white/5 bg-neutral-900">
-          <Image src="/images/prestations/dscf7240.jpg" alt="Laurine Moulin - Photo 13" width={800} height={600} sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto object-contain" />
-        </div>
-
-        {/* Photo 14 (Corrigée : présente à la racine de /prestations/) */}
-        <div className="w-full rounded-md overflow-hidden shadow-2xl border border-white/5 bg-neutral-900">
-          <Image src="/images/prestations/dscf7344.jpg" alt="Laurine Moulin - Photo 14" width={800} height={600} sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto object-contain" />
-        </div>
-
       </div>
     </div>
   );
