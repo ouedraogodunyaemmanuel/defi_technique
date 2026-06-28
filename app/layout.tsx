@@ -1,6 +1,16 @@
 import React from "react";
 import Link from "next/link";
+import { Metadata } from "next";
 import "./globals.css";
+
+// Configuration des métadonnées requises par Next.js pour l'onglet du navigateur
+export const metadata: Metadata = {
+  title: "DEO Photographie",
+  description: "Portfolio de DEO Photographie",
+  icons: {
+    icon: "/icon.png",
+  },
+};
 
 export default function RootLayout({
   children,
@@ -15,9 +25,9 @@ export default function RootLayout({
         <header className="fixed top-0 left-0 right-0 z-50 w-full p-6">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <Link href="/" className="relative block w-16 h-16">
-              {/* Utilisation d'une balise img standard pour éviter le crash en production */}
+              {/* Utilisation du chemin web universel /icon.png faisant référence à /public/icon.png */}
               <img
-                src="app\icon.png"
+                src="/icon.png"
                 alt="Logo DEO Photographie"
                 className="w-full h-full object-contain"
               />
